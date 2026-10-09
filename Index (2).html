@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jazib Khan | Digital Marketing &amp; SaaS Growth Marketer</title>
+<meta name="description" content="Portfolio of Jazib Khan, Digital Marketing Specialist and SaaS Product & Growth Marketer with 4+ years of experience in performance marketing, SEO, branding, CX and AI-driven marketing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F8F9FA;--surface:#FFFFFF;--surface-2:#F1F3F4;--line:#DADCE0;
+  --text:#202124;--muted:#5F6368;--blue:#1A73E8;--blue-soft:#E8F0FE;--on-blue:#FFFFFF;
+  --red:#D93025;--orange:#E37400;--green:#188038;--green-soft:#E6F4EA;
+  --shadow:0 1px 2px rgba(60,64,67,.3),0 1px 3px 1px rgba(60,64,67,.15);
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1B1C1E;--surface:#25272A;--surface-2:#2F3134;--line:#3C4043;--text:#E8EAED;--muted:#9AA0A6;
+  --blue:#8AB4F8;--blue-soft:#283A55;--on-blue:#202124;--red:#F28B82;--orange:#FCAD70;--green:#81C995;--green-soft:#24392B;--shadow:0 1px 3px rgba(0,0,0,.5)}}
+:root[data-theme="dark"]{
+  --bg:#1B1C1E;--surface:#25272A;--surface-2:#2F3134;--line:#3C4043;--text:#E8EAED;--muted:#9AA0A6;
+  --blue:#8AB4F8;--blue-soft:#283A55;--on-blue:#202124;--red:#F28B82;--orange:#FCAD70;--green:#81C995;--green-soft:#24392B;--shadow:0 1px 3px rgba(0,0,0,.5)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--text);font:400 14px/1.55 Roboto,"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:"Roboto Flex",Roboto,"Segoe UI",Arial,sans-serif;font-weight:500;margin:0}
+p{margin:0}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+svg{max-width:100%}
+
+/* top bar */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--surface);border-bottom:1px solid var(--line);height:64px;display:flex;align-items:center;gap:12px;padding:0 16px}
+.icon-btn{width:40px;height:40px;border-radius:50%;border:0;background:transparent;display:grid;place-items:center;cursor:pointer;color:var(--muted);flex:none}
+.icon-btn:hover{background:var(--surface-2)}
+.menu-btn{display:none}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.mark{width:36px;height:36px;border-radius:50%;background:var(--blue);color:var(--on-blue);display:grid;place-items:center;font-weight:700;font-size:14px;flex:none}
+.brand-text{display:flex;flex-direction:column;line-height:1.2;min-width:0}
+.brand-text strong{font-family:"Roboto Flex",Roboto,sans-serif;font-weight:500;font-size:18px;white-space:nowrap}
+.brand-text span{font-size:12px;color:var(--muted);white-space:nowrap}
+.search{flex:1;max-width:540px;margin-left:28px;display:flex;align-items:center;gap:10px;background:var(--surface-2);border-radius:8px;padding:0 14px;height:44px;color:var(--muted);position:relative}
+.search input{border:0;background:transparent;outline:none;flex:1;font:inherit;color:var(--text);min-width:0}
+.results{position:absolute;top:48px;left:0;right:0;background:var(--surface);border-radius:8px;box-shadow:var(--shadow);overflow:hidden;display:none;max-height:320px;overflow-y:auto}
+.results.open{display:block}
+.results button{display:flex;justify-content:space-between;gap:12px;width:100%;border:0;background:transparent;text-align:left;padding:10px 16px;cursor:pointer;color:var(--text)}
+.results button:hover,.results button:focus-visible{background:var(--surface-2)}
+.results small{color:var(--muted)}
+.top-actions{margin-left:auto;display:flex;align-items:center;gap:8px}
+.btn{display:inline-flex;align-items:center;gap:8px;height:36px;padding:0 20px;border-radius:18px;border:1px solid var(--line);background:var(--surface);color:var(--blue);font-weight:500;cursor:pointer;white-space:nowrap}
+.btn:hover{background:var(--blue-soft);text-decoration:none}
+.btn.primary{background:var(--blue);border-color:var(--blue);color:var(--on-blue)}
+.btn.primary:hover{filter:brightness(1.08)}
+
+/* shell */
+.shell{display:grid;grid-template-columns:256px 1fr;min-height:calc(100vh - 64px)}
+.rail{background:var(--surface);border-right:1px solid var(--line);padding:8px 12px 24px 0;position:sticky;top:calc(64px + env(safe-area-inset-top,0px));height:calc(100vh - 64px - env(safe-area-inset-top,0px));overflow:auto}
+.rail-group{font-size:12px;color:var(--muted);padding:16px 24px 6px}
+.nav-item{display:flex;align-items:center;gap:16px;width:100%;border:0;background:transparent;height:44px;border-radius:0 22px 22px 0;padding:0 16px 0 24px;cursor:pointer;text-align:left;font-weight:500;color:var(--text);white-space:nowrap}
+.nav-item svg{flex:none;color:var(--muted)}
+.nav-item:hover{background:var(--surface-2)}
+.nav-item[aria-current="page"]{background:var(--blue-soft);color:var(--blue)}
+.nav-item[aria-current="page"] svg{color:var(--blue)}
+.rail-foot{margin:20px 16px 0 24px;padding:14px;border:1px solid var(--line);border-radius:8px;font-size:13px;color:var(--muted)}
+.rail-foot strong{display:block;color:var(--text);font-weight:500;margin-bottom:4px}
+.scrim{display:none}
+
+main{min-width:0;padding-bottom:40px}
+.page-head{background:var(--surface);border-bottom:1px solid var(--line);padding:18px 32px 0}
+.head-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.crumb{font-size:12px;color:var(--muted);margin-bottom:2px}
+.page-head h1{font-size:24px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 12px;border:1px solid var(--line);border-radius:8px;font-size:13px;background:var(--surface)}
+.chip .dot{width:8px;height:8px;border-radius:50%;background:var(--green)}
+.tabs{display:flex;gap:2px;margin-top:10px;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs:empty{height:14px;margin:0}
+.tab{border:0;background:transparent;padding:0 16px;height:48px;font-weight:500;color:var(--muted);cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap}
+.tab:hover{color:var(--text);background:var(--surface-2)}
+.tab[aria-selected="true"]{color:var(--blue);border-bottom-color:var(--blue)}
+
+.content{padding:24px 32px;max-width:1240px}
+.card{background:var(--surface);border-radius:8px;box-shadow:var(--shadow);margin-bottom:20px;overflow:hidden}
+.card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.card-head h2{font-size:16px}
+.card-head p{margin-top:2px;color:var(--muted);font-size:13px}
+.card-body{padding:20px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.mt{margin-top:20px}
+.muted{color:var(--muted)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:20px}
+.hero-main{padding:28px}
+.status{display:inline-flex;align-items:center;gap:8px;background:var(--green-soft);color:var(--green);font-weight:500;font-size:13px;padding:4px 12px;border-radius:12px}
+.status i{width:8px;height:8px;border-radius:50%;background:currentColor}
+.hero-main h2{font-size:clamp(28px,3.6vw,40px);line-height:1.15;margin:16px 0 12px;letter-spacing:-.01em;max-width:22ch}
+.hero-main p.lead{color:var(--muted);font-size:15px;max-width:62ch;margin-bottom:12px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.facts{width:100%;border-collapse:collapse;font-size:13px}
+.facts th{text-align:left;font-weight:400;color:var(--muted);padding:11px 20px;width:42%;border-bottom:1px solid var(--line);vertical-align:top}
+.facts td{padding:11px 20px;border-bottom:1px solid var(--line)}
+.facts tr:last-child th,.facts tr:last-child td{border-bottom:0}
+
+/* scorecards */
+.scorecards{display:grid;grid-template-columns:repeat(4,1fr)}
+.score{padding:16px 20px 18px;border-right:1px solid var(--line);border-top:4px solid var(--c)}
+.score:last-child{border-right:0}
+.score .lbl{font-size:13px;color:var(--muted)}
+.score .num{font-family:"Roboto Flex",Roboto,sans-serif;font-size:30px;font-weight:500;line-height:1.1;margin-top:6px}
+.score .sub{font-size:12px;color:var(--muted);margin-top:4px}
+
+/* service tiles */
+.tile{background:var(--surface);border-radius:8px;box-shadow:var(--shadow);padding:20px}
+.tile .ic{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--blue-soft);color:var(--blue);margin-bottom:12px}
+.tile h3{font-size:15px;margin-bottom:6px}
+.tile p{font-size:13px;color:var(--muted)}
+.tile ul{margin:10px 0 0;padding-left:18px;font-size:13px}
+.tile li{margin-bottom:3px}
+
+/* steps */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,1fr)}
+.steps li{padding:18px 20px;border-right:1px solid var(--line);position:relative}
+.steps li:last-child{border-right:0}
+.steps .n{width:28px;height:28px;border-radius:50%;background:var(--blue);color:var(--on-blue);display:grid;place-items:center;font-weight:500;font-size:13px;margin-bottom:10px}
+.steps h4{font-size:14px;margin-bottom:4px}
+.steps p{font-size:13px;color:var(--muted)}
+
+/* tables */
+.table-wrap{overflow-x:auto}
+table.data{width:100%;border-collapse:collapse;font-size:13px}
+table.data th{text-align:left;font-weight:500;color:var(--muted);padding:12px 16px;border-bottom:1px solid var(--line);white-space:nowrap}
+table.data td{padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+table.data tr:last-child td{border-bottom:0}
+table.data tbody tr:hover td{background:var(--surface-2)}
+.st{display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
+.st i{width:10px;height:10px;border-radius:50%;background:var(--green)}
+.st.off i{background:var(--muted)}
+.linkish{color:var(--blue);font-weight:500;cursor:pointer;border:0;background:none;padding:0;text-align:left;font-size:14px}
+.linkish:hover{text-decoration:underline}
+.pill{display:inline-block;padding:2px 10px;border-radius:12px;background:var(--surface-2);font-size:12px;white-space:nowrap}
+
+/* tags */
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:12px;padding:4px 10px;border-radius:14px;border:1px solid var(--line);background:var(--surface)}
+.tag.hit{background:var(--blue-soft);border-color:var(--blue);color:var(--blue)}
+
+/* role detail */
+.role-head{display:flex;gap:16px;align-items:flex-start;padding:20px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.logo{width:48px;height:48px;border-radius:8px;display:grid;place-items:center;font-weight:700;color:#fff;flex:none;font-size:15px}
+.role-head h2{font-size:20px}
+.role-head .meta{display:flex;flex-wrap:wrap;gap:6px 16px;color:var(--muted);font-size:13px;margin-top:4px}
+.resp{display:grid;grid-template-columns:repeat(2,1fr)}
+.resp section{padding:18px 20px;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}
+.resp section:nth-child(2n){border-right:0}
+.resp h3{font-size:14px;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.resp h3 i{width:10px;height:10px;border-radius:2px;background:var(--c)}
+.resp ul{margin:0;padding-left:18px;font-size:13px}
+.resp li{margin-bottom:5px}
+.role-foot{padding:16px 20px}
+.role-foot h4{font-size:13px;color:var(--muted);font-weight:500;margin-bottom:8px}
+
+/* timeline chart */
+.gantt{padding:16px 20px 20px;overflow-x:auto}
+.gantt svg{min-width:680px;width:100%;height:auto;display:block}
+
+/* case studies */
+.cs-hero{display:grid;grid-template-columns:1.3fr 1fr;gap:0}
+.cs-intro{padding:24px;border-right:1px solid var(--line)}
+.cs-intro .kind{font-size:12px;color:var(--muted)}
+.cs-intro h2{font-size:24px;margin:4px 0 10px}
+.cs-intro p{color:var(--muted);font-size:14px;max-width:62ch}
+.ad-prev{padding:24px;background:var(--surface-2)}
+.ad-prev .lbl{font-size:12px;color:var(--muted);margin-bottom:10px}
+.serp{background:var(--surface);border-radius:8px;padding:16px;border:1px solid var(--line)}
+.serp .top{display:flex;align-items:center;gap:8px;font-size:12px}
+.serp .fav{width:26px;height:26px;border-radius:50%;background:var(--surface-2);display:grid;place-items:center}
+.serp h4{color:#1A0DAB;font-family:Roboto,Arial,sans-serif;font-weight:400;font-size:18px;line-height:1.3;margin:8px 0 4px}
+.serp p{font-size:13px;color:var(--muted)}
+.serp .sl{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:8px;font-size:13px;color:#1A0DAB}
+:root[data-theme="dark"] .serp h4,:root[data-theme="dark"] .serp .sl{color:#99C3FF}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .serp h4,:root:not([data-theme="light"]) .serp .sl{color:#99C3FF}}
+.cs-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+.cs-grid section{padding:18px 20px;border-top:1px solid var(--line);border-right:1px solid var(--line)}
+.cs-grid section:nth-child(3n){border-right:0}
+.cs-grid h3{font-size:14px;margin-bottom:8px}
+.cs-grid ul{margin:0;padding-left:18px;font-size:13px}
+.cs-grid li{margin-bottom:5px}
+.cs-grid p{font-size:13px;color:var(--muted)}
+.funnel{display:flex;flex-direction:column;gap:6px;padding:20px}
+.funnel .stage{display:grid;grid-template-columns:140px 1fr;gap:16px;align-items:center}
+.funnel .bar{height:34px;border-radius:4px;background:var(--c);color:#fff;display:flex;align-items:center;padding:0 12px;font-size:13px;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.funnel .name{font-size:13px;font-weight:500}
+.funnel .name small{display:block;font-weight:400;color:var(--muted)}
+
+/* projects */
+.proj{border-left:4px solid var(--c);background:var(--surface);border-radius:8px;box-shadow:var(--shadow);padding:20px}
+.proj .kind{font-size:12px;color:var(--muted)}
+.proj h3{font-size:16px;margin:4px 0 8px}
+.proj p{font-size:13px;color:var(--muted);margin-bottom:10px}
+.proj dl{display:grid;grid-template-columns:110px 1fr;gap:6px 12px;font-size:13px;margin:0}
+.proj dt{color:var(--muted)}
+.proj dd{margin:0}
+
+/* list rows */
+.list-row{display:flex;gap:14px;padding:16px 20px;border-bottom:1px solid var(--line);align-items:flex-start}
+.list-row:last-child{border-bottom:0}
+.badge{width:40px;height:40px;border-radius:8px;display:grid;place-items:center;flex:none;font-weight:700;font-size:12px;color:#fff}
+.list-row h3{font-size:14px;font-weight:500}
+.list-row p{font-size:13px;color:var(--muted);margin-top:2px}
+
+/* contact */
+.field{display:flex;flex-direction:column;gap:4px;padding:14px 0;border-bottom:1px solid var(--line)}
+.field:last-child{border-bottom:0}
+.field label{font-size:12px;color:var(--muted)}
+.field .v{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:15px;flex-wrap:wrap}
+.copy{border:1px solid var(--line);background:var(--surface);border-radius:16px;height:30px;padding:0 12px;font-size:12px;cursor:pointer;color:var(--blue)}
+
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,140px);background:#323232;color:#fff;padding:12px 20px;border-radius:4px;font-size:14px;transition:transform .25s,visibility .25s;z-index:60;visibility:hidden}
+.toast.show{transform:translate(-50%,0);visibility:visible}
+footer{padding:0 32px;color:var(--muted);font-size:12px}
+.hire{border:0;padding:0;border-radius:12px;background:var(--surface);color:var(--text);width:min(460px,calc(100vw - 32px));box-shadow:0 8px 28px rgba(0,0,0,.28)}
+.hire::backdrop{background:rgba(32,33,36,.5)}
+.hire[open]{animation:pop .18s ease-out}
+@keyframes pop{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:none}}
+.hire-head{display:flex;align-items:center;gap:12px;padding:18px 16px 14px 20px;border-bottom:1px solid var(--line)}
+.hire-head h2{font-size:18px}
+.hire-head p{font-size:13px;color:var(--muted)}
+.hire-body{padding:16px 20px 4px}
+.hire-body .status{margin-bottom:4px}
+.hire-foot{display:flex;justify-content:flex-end;gap:8px;flex-wrap:wrap;padding:14px 20px 18px;border-top:1px solid var(--line)}
+
+@media (max-width:1100px){
+  .hero,.grid2,.cs-hero{grid-template-columns:1fr}
+  .cs-intro{border-right:0;border-bottom:1px solid var(--line)}
+  .grid3{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .steps li{border-bottom:1px solid var(--line)}
+  .cs-grid{grid-template-columns:1fr 1fr}
+  .cs-grid section:nth-child(3n){border-right:1px solid var(--line)}
+  .cs-grid section:nth-child(2n){border-right:0}
+}
+@media (max-width:860px){
+  .menu-btn{display:grid}
+  .shell{grid-template-columns:1fr}
+  .rail{position:fixed;left:0;top:0;bottom:0;height:100%;width:280px;z-index:50;transform:translateX(-100%);transition:transform .2s;padding-top:calc(16px + env(safe-area-inset-top,0px));box-shadow:var(--shadow)}
+  .rail.open{transform:none}
+  .scrim{position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:45}
+  .scrim.open{display:block}
+  .search{display:none}
+  .brand-text span,.hide-sm{display:none}
+  .page-head{padding:14px 16px 0}
+  .content{padding:16px}
+  footer{padding:0 16px}
+  .scorecards{grid-template-columns:1fr 1fr}
+  .score:nth-child(2){border-right:0}
+  .grid3,.resp,.cs-grid,.steps{grid-template-columns:1fr}
+  .resp section,.cs-grid section,.cs-grid section:nth-child(3n){border-right:0}
+  .steps li{border-right:0}
+  .funnel .stage{grid-template-columns:1fr}
+  .proj dl{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open navigation">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+  </button>
+  <div class="brand">
+    <div class="mark" aria-hidden="true">JK</div>
+    <div class="brand-text"><strong>Jazib Khan</strong><span>Digital Marketing &amp; SaaS Growth</span></div>
+  </div>
+  <div class="search">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+    <input id="search" type="search" placeholder="Search skills, tools, products or roles" aria-label="Search portfolio" autocomplete="off">
+    <div class="results" id="results" role="listbox"></div>
+  </div>
+  <div class="top-actions">
+    <button class="icon-btn" id="themeBtn" aria-label="Switch light or dark theme" title="Switch theme">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.39 5.39 0 0 1-4.4 2.26 5.4 5.4 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
+    </button>
+    <button class="btn primary" id="hireBtn" aria-haspopup="dialog">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      <span>Hire me</span>
+    </button>
+  </div>
+</header>
+
+<div class="shell">
+  <nav class="rail" id="rail" aria-label="Portfolio sections"></nav>
+  <div class="scrim" id="scrim"></div>
+  <main>
+    <div class="page-head">
+      <div class="head-row">
+        <div><div class="crumb" id="crumb">Portfolio</div><h1 id="pageTitle">Overview</h1></div>
+        <div class="chips">
+          <span class="chip"><span class="dot"></span>Open to opportunities</span>
+          <span class="chip hide-sm">Remote, US teams</span>
+          <span class="chip hide-sm">Srinagar, India</span>
+        </div>
+      </div>
+      <div class="tabs" role="tablist" id="tabs"></div>
+    </div>
+    <div class="content" id="content" role="tabpanel"></div>
+    <footer>Jazib Khan, Digital Marketing Specialist and SaaS Product &amp; Growth Marketer. iamjazzib@gmail.com</footer>
+  </main>
+</div>
+<dialog class="hire" id="hireDlg" aria-labelledby="hireTitle">
+  <div class="hire-head">
+    <div class="mark" aria-hidden="true">JK</div>
+    <div style="flex:1;min-width:0"><h2 id="hireTitle">Hire Jazib Khan</h2><p>Digital Marketing Specialist and SaaS Growth Marketer</p></div>
+    <button class="icon-btn" id="hireClose" aria-label="Close contact details"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg></button>
+  </div>
+  <div class="hire-body">
+    <span class="status"><i></i>Available for full-time and remote roles</span>
+    <div class="field"><label>Email</label><div class="v"><a href="mailto:iamjazzib@gmail.com?subject=Opportunity%20for%20Jazib%20Khan">iamjazzib@gmail.com</a><button class="copy" data-copy="iamjazzib@gmail.com">Copy email</button></div></div>
+    <div class="field"><label>Alternate email</label><div class="v"><a href="mailto:Jazzib.khan@outlook.com">Jazzib.khan@outlook.com</a><button class="copy" data-copy="Jazzib.khan@outlook.com">Copy email</button></div></div>
+    <div class="field"><label>Phone</label><div class="v"><a href="tel:+916005044500">+91 6005044500</a><button class="copy" data-copy="+91 6005044500">Copy number</button></div></div>
+    <div class="field"><label>Location</label><div class="v">Srinagar, J&amp;K, India. Remote with US teams</div></div>
+  </div>
+  <div class="hire-foot">
+    <button class="btn" data-nav="contact" id="hireMore">Full contact page</button>
+    <a class="btn primary" href="mailto:iamjazzib@gmail.com?subject=Opportunity%20for%20Jazib%20Khan">Email Jazib</a>
+  </div>
+</dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+const I={
+ overview:'<path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>',
+ experience:'<path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>',
+ skills:'<path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/>',
+ products:'<path d="M18 11v2h4v-2h-4zm-2 6.61c.96.71 2.21 1.65 3.2 2.39.4-.53.8-1.07 1.2-1.6-.99-.74-2.24-1.68-3.2-2.4-.4.54-.8 1.08-1.2 1.61zM20.4 5.6c-.4-.53-.8-1.07-1.2-1.6-.99.74-2.24 1.68-3.2 2.4.4.53.8 1.07 1.2 1.6.96-.72 2.21-1.65 3.2-2.4zM4 9c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h1v4h2v-4h1l5 3V6L8 9H4zm11.5 3c0-1.33-.58-2.53-1.5-3.35v6.69c.92-.81 1.5-2.01 1.5-3.34z"/>',
+ projects:'<path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>',
+ education:'<path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3 1 9l11 6 9-4.91V17h2V9L12 3z"/>',
+ tools:'<path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>',
+ contact:'<path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>'
+};
+const svg=(k,s=20)=>`<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">${I[k]}</svg>`;
+
+/* ---------- DATA ---------- */
+const roles=[
+ {id:'expentor',title:'Marketing & Product Development Specialist',org:'EXPENTOR',where:'United States (Remote)',dates:'Nov 2025 – Present',dur:'Current',type:'SaaS startup',color:'#1A73E8',active:true,
+  summary:'I own marketing strategy and product development for a US-based SaaS startup, taking B2B products from positioning to launch to adoption. My work spans brand, go-to-market, growth programs and customer experience across an Education ERP, an Insurance Operations Platform and a Digital e-Logbook.',
+  groups:[
+   ['Strategy & go-to-market','#1A73E8',['Lead end-to-end marketing strategy and product development, driving brand positioning and go-to-market execution.','Define positioning, messaging and launch plans for three B2B SaaS products.','Run competitive market research and build buyer personas that guide the product roadmap.']],
+   ['SaaS product marketing','#D93025',['Own product marketing for the Education ERP, Insurance Operations Platform and Digital e-Logbook.','Work with product and engineering teams on feature launches, user acquisition and retention.','Create sales enablement material and product messaging for each audience.']],
+   ['Branding & customer experience','#E37400',['Shape brand identity so every product feels part of one family.','Map the customer journey from first touchpoint through onboarding, adoption and retention.','Use customer feedback to improve onboarding and product messaging.']],
+   ['Growth & performance','#188038',['Manage multi-channel campaigns across Google, LinkedIn and Meta, optimizing for qualified leads.','Build growth programs that connect paid, organic and lifecycle channels.','Build AI-driven content pipelines and automated workflows that scale outreach and reduce manual effort.']]
+  ],
+  stack:['Google Ads','LinkedIn Ads','Meta Ads','HubSpot','GA4','AI Agents','MCP','Zapier','Figma','Notion']},
+ {id:'iquasar',title:'Digital Marketing Specialist',org:'iQuasar LLC',where:'United States (Remote)',dates:'May 2022 – Dec 2025',dur:'3 yrs 8 mos',type:'Gov contracting, staffing & software',color:'#188038',active:false,
+  summary:'I ran full-funnel digital marketing for a US company in government contracting, federal staffing and software. I planned and executed across paid media, SEO, email, social, webinars and analytics, and managed the HubSpot CRM that tied it all together.',
+  groups:[
+   ['Paid media','#1A73E8',['Managed and optimized Google Ads, LinkedIn Ads and Meta Ads, consistently improving CTR, CPC and ROI.','Ran A/B and multivariate tests on campaigns, landing pages and ad creatives.']],
+   ['SEO & content','#D93025',['Implemented technical and on-page SEO that improved organic rankings and drove sustainable traffic growth.','Developed content strategy across blog, social and email channels.']],
+   ['Email, CRM & automation','#E37400',['Built and automated email journeys in HubSpot and Mailchimp, increasing open and conversion rates.','Managed HubSpot CRM workflows for segmentation, lead scoring and lifecycle tracking.','Used AI agents, MCP integrations and automation platforms to streamline marketing operations.']],
+   ['Analytics & reporting','#188038',['Delivered analysis and reporting through Google Analytics, Looker Studio, Power BI and Microsoft Clarity.','Turned campaign data into recommendations for budget and channel decisions.']],
+   ['Social & webinars','#9334E6',['Led social content creation, community management and scheduling across LinkedIn, Meta and Twitter/X.','Planned and marketed webinars from concept to execution, generating qualified pipeline leads.']],
+   ['Research & product','#12B5CB',['Conducted market research and developed buyer personas.','Contributed to product and service development with market insights.']]
+  ],
+  stack:['Google Ads','LinkedIn Ads','Meta Ads','HubSpot','Mailchimp','GA4','Looker Studio','Power BI','Microsoft Clarity','SEMrush','Ahrefs','WordPress','Hootsuite']}
+];
+
+const products=[
+ {id:'erp',name:'Education ERP',emoji:'🎓',kind:'B2B SaaS, EdTech',
+  intro:'A cloud ERP that brings admissions, fees, attendance, exams and communication for schools and colleges onto one platform. I worked on how it is positioned, who it is for and how it reaches them.',
+  audience:['School owners and principals','College administrators and registrars','Finance and admissions teams'],
+  challenge:'Institutions often run on spreadsheets and separate tools. The product needed a message that made switching feel simple and low-risk for non-technical decision-makers.',
+  role:['Market research and competitor mapping in the EdTech ERP space','Buyer personas for administrators, principals and finance teams','Value proposition, messaging and positioning','Go-to-market plan and launch planning','Demand generation across search, social and email'],
+  channels:['Google Search','LinkedIn','Meta','Email nurture','Landing pages','Webinars and demos'],
+  deliverables:['Positioning and messaging framework','Persona documents','Landing page copy and structure','Ad copy sets for search and social','Demo-booking funnel and nurture sequence'],
+  ad:{h:'Run Your Whole Institution in One Place | Education ERP',d:'Admissions, fees, attendance and exams on one cloud platform. Built for schools and colleges.',s:['Admissions','Fee management','Book a demo']}},
+ {id:'insurance',name:'Insurance Operations Platform',emoji:'🛡️',kind:'B2B SaaS, InsurTech',
+  intro:'A B2B platform that streamlines policy administration, claims and day-to-day insurance operations for agencies and carriers. My focus was positioning against legacy systems and generating qualified leads.',
+  audience:['Insurance agency owners','Operations and claims managers','Carriers and brokers'],
+  challenge:'Insurance teams are cautious buyers with established systems. The story had to lead with efficiency and reliability, and give sales a clear way to explain the product.',
+  role:['Competitive analysis of insurance operations software','Product positioning and messaging','Sales enablement content for demos and outreach','Lead generation campaigns for agencies and carriers','Content for website and campaigns'],
+  channels:['LinkedIn Ads','Google Search','Account-based outreach','Email','Website content'],
+  deliverables:['Competitive landscape summary','Messaging guide by persona','Sales one-pagers and pitch content','LinkedIn and search campaign plans','Lead scoring criteria in the CRM'],
+  ad:{h:'Simplify Insurance Operations | Policies and Claims in One Platform',d:'Cut manual work across policy admin and claims. A B2B SaaS platform for agencies and carriers.',s:['Claims workflow','For agencies','Request a demo']}},
+ {id:'elogbook',name:'Digital e-Logbook',emoji:'📘',kind:'B2B SaaS, Compliance & operations',
+  intro:'A digital logbook that replaces paper records with searchable, secure, audit-ready entries. I led its product marketing and launch, from brand to adoption.',
+  audience:['Operations and compliance managers','Teams that keep regulated records','Training and supervision leads'],
+  challenge:'Paper logbooks are familiar and trusted. The launch had to show that a digital version is just as easy to use and makes audits faster.',
+  role:['Product marketing and launch planning','Branding and visual identity direction','Website and landing page content','User adoption and onboarding campaigns','Feedback loops to improve the experience'],
+  channels:['Website and SEO','Google Search','Email onboarding','Social media','Product walkthrough content'],
+  deliverables:['Launch plan and timeline','Brand guidelines for the product','Landing pages and product copy','Onboarding email sequence','Walkthrough and how-to content'],
+  ad:{h:'Replace Paper Logbooks | Digital e-Logbook Software',d:'Record, track and audit entries digitally. Searchable, secure and ready for compliance.',s:['How it works','Compliance','Start free trial']}}
+];
+
+const skillAreas=[
+ {id:'saas',name:'SaaS & strategic marketing',color:'#1A73E8',desc:'Positioning, launches and go-to-market for B2B SaaS.',where:'EXPENTOR',items:['SaaS Product Marketing','Strategic Marketing Planning','Growth Marketing','Product-Led Growth','Go-to-Market Strategy','Positioning & Messaging','Product Launches','Competitive Analysis','Sales Enablement','Pricing & Packaging Research']},
+ {id:'brand',name:'Branding & customer experience',color:'#E37400',desc:'A recognisable brand and a smooth customer journey.',where:'EXPENTOR',items:['Brand Strategy','Brand Identity & Positioning','Brand Storytelling','Customer Experience (CX)','Customer Journey Mapping','User Onboarding','Customer Retention','Voice of Customer']},
+ {id:'digital',name:'Digital marketing',color:'#9334E6',desc:'Integrated campaigns across content, email and social.',where:'iQuasar, EXPENTOR',items:['Integrated Digital Strategy','Content Marketing','Email Marketing','Social Media Marketing','Webinar Marketing','Inbound Marketing','B2B Marketing','Lead Generation']},
+ {id:'paid',name:'Performance & paid media',color:'#D93025',desc:'Search and social campaigns built around qualified leads and ROI.',where:'iQuasar, EXPENTOR',items:['Google Ads','Meta Ads','LinkedIn Ads','Microsoft Ads','SEM & PPC','Campaign Budget Optimization','Audience Targeting','Retargeting','ROAS Optimization','Conversion Tracking']},
+ {id:'seo',name:'SEO & content strategy',color:'#188038',desc:'Technical and content SEO for search engines and AI answers.',where:'iQuasar',items:['Technical SEO','On-Page & Off-Page SEO','Semantic Search','E-E-A-T Content','Schema Markup','Voice Search Optimization','Keyword Research','Long-Form Intent-Led Content','Content Repurposing','AEO']},
+ {id:'ai',name:'AI & generative AI',color:'#12B5CB',desc:'AI agents and workflows that remove manual marketing work.',where:'iQuasar, EXPENTOR',items:['Generative AI for Marketing','Prompt Engineering','AI Agents','MCP Integrations','Agentic Workflows','AI-Driven Segmentation','Predictive Analytics','AI Content Creation','Ethical AI Usage','ChatGPT','Midjourney','Perplexity']},
+ {id:'auto',name:'Marketing automation & CRM',color:'#F9AB00',desc:'HubSpot-led funnels with scoring and lifecycle stages.',where:'iQuasar',items:['HubSpot Marketing Hub & CRM','Mailchimp','Klaviyo','Zapier','Windsor AI','Lead Scoring','Audience Segmentation','Lifecycle Marketing','Drip Campaigns','Multi-Touch Attribution','CRM Pipeline Management']},
+ {id:'data',name:'Analytics & reporting',color:'#5F6368',desc:'Dashboards and tests that turn data into decisions.',where:'iQuasar',items:['Google Analytics 4','Looker Studio','Power BI','Microsoft Clarity','Google Tag Manager','A/B & Multivariate Testing','Heatmaps & Behaviour Analytics','KPI Reporting','Data Visualization','Data Storytelling']},
+ {id:'product',name:'Product & growth',color:'#1A73E8',desc:'Research and CRO that shape what gets built and sold.',where:'EXPENTOR, Safelet',items:['Product Development','Market Research','Buyer Persona Development','Conversion Rate Optimization','Landing Page Optimization','UI/UX Optimization','Customer Retention Strategy']},
+ {id:'social',name:'Social media & video',color:'#D93025',desc:'Content, community and short-form video.',where:'iQuasar',items:['LinkedIn','Meta Business Suite','Twitter/X','Content Calendars','Community Management','Video Scripting','Short-Form Video','Influencer Collaboration','Hootsuite','Buffer','Sprout Social']},
+ {id:'soft',name:'Working style',color:'#188038',desc:'How I work with teams and stakeholders.',where:'All roles',items:['Strategic Thinking','Data-Driven Decisions','Cross-Functional Collaboration','Agile Project Management','Creative Problem Solving','Stakeholder Management','Adaptability','Time Management']}
+];
+
+const tools=[
+ ['Advertising','Google Ads, Meta Ads Manager, LinkedIn Campaign Manager, Microsoft Advertising'],
+ ['SEO','SEMrush, Ahrefs, Moz, Screaming Frog, Google Search Console, Yoast SEO'],
+ ['Analytics','Google Analytics 4, Google Tag Manager, Looker Studio, Power BI, Microsoft Clarity, MS Excel'],
+ ['CRM & automation','HubSpot, Mailchimp, Klaviyo, Zapier, Windsor AI, ZoomInfo'],
+ ['AI','ChatGPT, Midjourney, Perplexity, AI agents, MCP integrations'],
+ ['Social','Meta Business Suite, Hootsuite, Buffer, Sprout Social'],
+ ['Design & content','Canva, Figma, WordPress'],
+ ['Planning','Notion, Miro']
+];
+
+const projects=[
+ {name:'Safelet wearable safety device',kind:'Market research & product development',color:'#1A73E8',text:'Led end-to-end market research and product development for a tech wearable safety product.',dl:[['My role','Research lead and product marketer'],['Work done','Market sizing, user research, positioning, go-to-market strategy'],['Skills','Product development, GTM, buyer personas']]},
+ {name:'Marketing strategies of K.C Hyundai, Srinagar',kind:'Regional marketing strategy',color:'#E37400',text:'Researched and developed digital and offline marketing strategies for an automotive dealership in Jammu & Kashmir.',dl:[['My role','Researcher and strategist'],['Work done','Local market analysis, channel mix, digital and offline plan'],['Skills','Local marketing, strategy, research']]},
+ {name:'Customer satisfaction study, Punjab National Bank',kind:'Customer experience research',color:'#188038',text:'Analyzed satisfaction levels of savings account holders and turned the findings into service improvements.',dl:[['My role','Researcher and analyst'],['Work done','Survey design, data analysis, recommendations'],['Skills','CX research, data analysis']]},
+ {name:'Emergence of internet marketing',kind:'Academic research',color:'#D93025',text:'Studied the need, opportunities and challenges of internet marketing as digital ecosystems change.',dl:[['My role','Author'],['Work done','Literature review, analysis of digital channels'],['Skills','Digital marketing theory, research writing']]}
+];
+
+const certs=[
+ ['HS','#FF7A59','HubSpot Content Marketing','HubSpot Academy'],
+ ['HS','#FF7A59','HubSpot Inbound Sales','HubSpot Academy'],
+ ['HS','#FF7A59','HubSpot Sales Software','HubSpot Academy'],
+ ['G','#1A73E8','Digital Marketing & E-Commerce','Google'],
+ ['G','#1A73E8','Data Analytics Professional Certificate','Google, in progress'],
+ ['IBM','#0F62FE','Data Science Professional Certificate','IBM'],
+ ['IBM','#0F62FE','Data Visualization with Python','IBM']
+];
+
+/* ---------- RENDERERS ---------- */
+const P={};
+P.overview={label:'Overview',icon:'overview',tabs:[['summary','Summary'],['services','What I do'],['approach','How I work']],
+ render(t){
+  if(t==='services') return `<div class="grid3">${[
+   ['products','SaaS product marketing','Positioning, messaging and launches for B2B SaaS products.',['Go-to-market plans','Personas and value props','Sales enablement']],
+   ['overview','Growth marketing','Full-funnel programs that bring in qualified pipeline.',['Acquisition to retention','Experiments and CRO','Lifecycle campaigns']],
+   ['experience','Strategic marketing','Market research and plans that tie marketing to business goals.',['Competitive analysis','Channel strategy','Budget planning']],
+   ['education','Branding','A brand that is clear, consistent and recognisable.',['Brand identity','Storytelling','Brand guidelines']],
+   ['contact','Customer experience','Journeys that make onboarding and adoption easy.',['Journey mapping','Onboarding flows','Voice of customer']],
+   ['projects','Performance marketing','Paid search and social built around ROI.',['Google, Meta, LinkedIn, Microsoft','Conversion tracking','ROAS optimization']],
+   ['skills','SEO & AEO','Technical and content SEO for search and AI answers.',['Technical audits','Schema markup','Intent-led content']],
+   ['tools','Marketing automation','HubSpot funnels, scoring and nurture.',['Email journeys','Lead scoring','CRM hygiene']],
+   ['projects','Analytics & AI','Reporting and AI workflows that save time.',['GA4 and Looker Studio','AI agents and MCP','KPI dashboards']]
+  ].map(([ic,h,p,l])=>`<article class="tile"><div class="ic">${svg(ic)}</div><h3>${h}</h3><p>${p}</p><ul>${l.map(x=>`<li>${x}</li>`).join('')}</ul></article>`).join('')}</div>`;
+  if(t==='approach') return `<div class="card"><div class="card-head"><div><h2>How I run a marketing engagement</h2><p>The same five steps whether it is a product launch or an always-on campaign.</p></div></div>
+   <ol class="steps">${[
+    ['Research','Market, competitors and customers, then buyer personas.'],
+    ['Position','Value proposition, messaging and brand direction.'],
+    ['Plan','Channel mix, budget, content calendar and tracking setup.'],
+    ['Launch','Campaigns across paid, organic, email and social.'],
+    ['Optimize','A/B tests, reporting and changes based on data.']
+   ].map((s,i)=>`<li><div class="n">${i+1}</div><h4>${s[0]}</h4><p>${s[1]}</p></li>`).join('')}</ol></div>
+   <div class="grid2">
+    <div class="card"><div class="card-head"><div><h2>What I care about</h2></div></div><div class="card-body"><ul style="margin:0;padding-left:18px">
+     <li style="margin-bottom:8px">Every campaign is tied to pipeline, signups or revenue, not vanity numbers.</li>
+     <li style="margin-bottom:8px">Brand and performance work together, not against each other.</li>
+     <li style="margin-bottom:8px">AI and automation handle the repetitive work so the team can think.</li>
+     <li>Clear reporting that anyone in the company can read.</li></ul></div></div>
+    <div class="card"><div class="card-head"><div><h2>Industries</h2><p>Where I have hands-on experience</p></div></div><div class="card-body"><div class="tags">${['B2B SaaS','EdTech','InsurTech','Government Contracting','Federal Staffing','Software (US market)','Startups','Automotive (research)','Banking (research)'].map(x=>`<span class="tag">${x}</span>`).join('')}</div></div></div>
+   </div>`;
+  return `<div class="hero">
+   <div class="card hero-main">
+    <span class="status"><i></i>Available for full-time and remote roles</span>
+    <h2>Digital marketer who takes SaaS products from launch to growth.</h2>
+    <p class="lead">I'm Jazib Khan, a Digital Marketing Specialist and full-stack marketer with 4+ years of experience growing US-based SaaS, software and government contracting companies.</p>
+    <p class="lead">I bring together SaaS product marketing, strategic and growth marketing, branding and customer experience. I run paid media on Google, Meta and LinkedIn, build SEO and AEO programs, automate funnels in HubSpot, and use AI agents to scale the work.</p>
+    <div class="actions"><button class="btn primary" data-nav="experience">View experience</button><button class="btn" data-nav="products">See product case studies</button><a class="btn" href="mailto:iamjazzib@gmail.com">Email me</a></div>
+   </div>
+   <div class="card"><div class="card-head"><div><h2>At a glance</h2></div></div>
+    <table class="facts"><tbody>
+     <tr><th>Current role</th><td>Marketing &amp; Product Development Specialist, EXPENTOR</td></tr>
+     <tr><th>Experience</th><td>4+ years, remote with US teams</td></tr>
+     <tr><th>Focus</th><td>SaaS product marketing, growth, branding, CX</td></tr>
+     <tr><th>Products marketed</th><td>Education ERP, Insurance Operations Platform, Digital e-Logbook</td></tr>
+     <tr><th>Education</th><td>MBA in Marketing, Bangalore University</td></tr>
+     <tr><th>Certified by</th><td>HubSpot, Google, IBM</td></tr>
+     <tr><th>Location</th><td>Srinagar, J&amp;K, India</td></tr>
+    </tbody></table></div>
+  </div>
+  <div class="card mt"><div class="scorecards">
+   <div class="score" style="--c:#1A73E8"><div class="lbl">Years of experience</div><div class="num">4+</div><div class="sub">Since May 2022</div></div>
+   <div class="score" style="--c:#D93025"><div class="lbl">SaaS products marketed</div><div class="num">3</div><div class="sub">EdTech, InsurTech, compliance</div></div>
+   <div class="score" style="--c:#E37400"><div class="lbl">Certifications</div><div class="num">7</div><div class="sub">HubSpot, Google, IBM</div></div>
+   <div class="score" style="--c:#188038"><div class="lbl">Ad platforms</div><div class="num">4</div><div class="sub">Google, Meta, LinkedIn, Microsoft</div></div>
+  </div></div>
+  <div class="card"><div class="card-head"><div><h2>Career timeline</h2><p>Degrees completed and roles held</p></div></div><div class="gantt">${gantt()}</div></div>`;
+ }};
+
+P.experience={label:'Experience',icon:'experience',tabs:[['all','All roles'],...roles.map(r=>[r.id,r.org])],
+ render(t){
+  if(t==='all') return `<div class="card"><div class="card-head"><div><h2>Roles</h2><p>Select a role to see the full detail.</p></div></div><div class="table-wrap"><table class="data">
+   <thead><tr><th>Status</th><th>Role</th><th>Company</th><th>Industry</th><th>Dates</th><th>Duration</th></tr></thead><tbody>
+   ${roles.map(r=>`<tr><td><span class="st ${r.active?'':'off'}"><i></i>${r.active?'Current':'Completed'}</span></td>
+    <td><button class="linkish" data-tab="${r.id}">${esc(r.title)}</button></td><td>${esc(r.org)}<div class="muted" style="font-size:12px">${r.where}</div></td>
+    <td><span class="pill">${esc(r.type)}</span></td><td style="white-space:nowrap">${r.dates}</td><td>${r.dur}</td></tr>`).join('')}
+   </tbody></table></div></div>
+   <div class="card"><div class="card-head"><div><h2>Timeline</h2></div></div><div class="gantt">${gantt()}</div></div>`;
+  const r=roles.find(x=>x.id===t);
+  return `<div class="card">
+   <div class="role-head"><div class="logo" style="background:${r.color}">${r.org.slice(0,2).toUpperCase()}</div>
+    <div style="flex:1;min-width:220px"><h2>${esc(r.title)}</h2><div class="meta"><span>${esc(r.org)}</span><span>${r.where}</span><span>${r.dates}</span><span>${esc(r.type)}</span></div></div>
+    <span class="st ${r.active?'':'off'}"><i></i>${r.active?'Current':'Completed'}</span></div>
+   <div class="card-body" style="border-bottom:1px solid var(--line)"><p style="max-width:80ch">${esc(r.summary)}</p></div>
+   <div class="resp">${r.groups.map(g=>`<section style="--c:${g[1]}"><h3><i></i>${esc(g[0])}</h3><ul>${g[2].map(x=>`<li>${esc(x)}</li>`).join('')}</ul></section>`).join('')}</div>
+   <div class="role-foot"><h4>Tools used in this role</h4><div class="tags">${r.stack.map(x=>`<span class="tag">${esc(x)}</span>`).join('')}</div></div>
+  </div>`;
+ }};
+
+P.skills={label:'Skills',icon:'skills',tabs:[['all','All skills'],['marketing','Marketing'],['tech','AI & data'],['table','Skills table']],
+ render(t){
+  const sets={marketing:['saas','brand','digital','paid','seo','social','product'],tech:['ai','auto','data']};
+  if(t==='table') return `<div class="card"><div class="card-head"><div><h2>Skills by area</h2><p>Where each skill set was used.</p></div></div><div class="table-wrap"><table class="data">
+   <thead><tr><th>Skill area</th><th>Skills</th><th>Used at</th></tr></thead><tbody>
+   ${skillAreas.map(a=>`<tr><td style="white-space:nowrap;font-weight:500"><span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:${a.color};margin-right:8px"></span>${esc(a.name)}</td><td>${a.items.map(esc).join(', ')}</td><td style="white-space:nowrap">${esc(a.where)}</td></tr>`).join('')}
+   </tbody></table></div></div>`;
+  const list=t==='all'?skillAreas:skillAreas.filter(a=>sets[t].includes(a.id));
+  return `<div class="grid2">${list.map(a=>`<div class="card" style="margin:0;border-top:4px solid ${a.color}"><div class="card-head"><div><h2>${esc(a.name)}</h2><p>${esc(a.desc)}</p></div><span class="pill">${a.items.length}</span></div>
+   <div class="card-body"><div class="tags">${a.items.map(x=>`<span class="tag" data-skill="${esc(x.toLowerCase())}">${esc(x)}</span>`).join('')}</div><p class="muted" style="font-size:12px;margin-top:12px">Used at: ${esc(a.where)}</p></div></div>`).join('')}</div>`;
+ }};
+
+P.products={label:'Products',icon:'products',tabs:[['all','All products'],...products.map(p=>[p.id,p.name])],
+ render(t){
+  if(t==='all') return `<div class="card"><div class="card-head"><div><h2>SaaS products I have marketed</h2><p>Select a product to open the case study.</p></div></div><div class="table-wrap"><table class="data">
+   <thead><tr><th>Product</th><th>Category</th><th>Audience</th><th>My focus</th></tr></thead><tbody>
+   ${products.map(p=>`<tr><td><button class="linkish" data-tab="${p.id}">${p.emoji} ${esc(p.name)}</button></td><td><span class="pill">${esc(p.kind)}</span></td><td>${p.audience.map(esc).join(', ')}</td><td>${p.role.slice(0,3).map(esc).join('; ')}</td></tr>`).join('')}
+   </tbody></table></div></div>
+   <div class="card"><div class="card-head"><div><h2>Shared go-to-market funnel</h2><p>The framework I applied across all three products</p></div></div>
+   <div class="funnel">${[
+    ['Awareness','Search, LinkedIn, Meta, SEO content','#1A73E8',100],
+    ['Consideration','Landing pages, webinars, case content','#D93025',82],
+    ['Conversion','Demo booking, free trial, sales enablement','#E37400',64],
+    ['Onboarding','Welcome journeys, walkthroughs, CX touchpoints','#188038',48],
+    ['Retention','Lifecycle email, feature launches, feedback','#9334E6',36]
+   ].map(s=>`<div class="stage"><div class="name">${s[0]}<small>${s[1]}</small></div><div><div class="bar" style="--c:${s[2]};width:${s[3]}%">${s[0]}</div></div></div>`).join('')}</div></div>`;
+  const p=products.find(x=>x.id===t);
+  return `<div class="card"><div class="cs-hero">
+   <div class="cs-intro"><div class="kind">${esc(p.kind)}</div><h2>${p.emoji} ${esc(p.name)}</h2><p>${esc(p.intro)}</p>
+    <p style="margin-top:12px"><strong style="color:var(--text);font-weight:500">The challenge:</strong> ${esc(p.challenge)}</p></div>
+   <div class="ad-prev"><div class="lbl">Sample search ad concept</div><div class="serp"><div class="top"><span class="fav">${p.emoji}</span><div><b>Sponsored</b><br>${esc(p.name)}</div></div>
+    <h4>${esc(p.ad.h)}</h4><p>${esc(p.ad.d)}</p><div class="sl">${p.ad.s.map(x=>`<span>${esc(x)}</span>`).join('')}</div></div></div>
+  </div>
+  <div class="cs-grid">
+   <section><h3>Target audience</h3><ul>${p.audience.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></section>
+   <section><h3>My role</h3><ul>${p.role.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></section>
+   <section><h3>Channels</h3><div class="tags">${p.channels.map(x=>`<span class="tag">${esc(x)}</span>`).join('')}</div></section>
+   <section style="grid-column:1/-1;border-right:0"><h3>Deliverables</h3><div class="tags">${p.deliverables.map(x=>`<span class="tag">${esc(x)}</span>`).join('')}</div></section>
+  </div></div>`;
+ }};
+
+P.projects={label:'Projects',icon:'projects',tabs:[],
+ render(){return `<div class="grid2">${projects.map(p=>`<article class="proj" style="--c:${p.color}"><div class="kind">${esc(p.kind)}</div><h3>${esc(p.name)}</h3><p>${esc(p.text)}</p><dl>${p.dl.map(d=>`<dt>${d[0]}</dt><dd>${esc(d[1])}</dd>`).join('')}</dl></article>`).join('')}</div>`}};
+
+P.education={label:'Education & certifications',icon:'education',tabs:[['edu','Education'],['certs','Certifications']],
+ render(t){
+  if(t==='certs') return `<div class="card"><div class="card-head"><div><h2>Certifications</h2><p>7 certifications across marketing, sales and data</p></div></div>${certs.map(c=>`<div class="list-row"><div class="badge" style="background:${c[1]}">${c[0]}</div><div><h3>${esc(c[2])}</h3><p>${esc(c[3])}</p></div></div>`).join('')}</div>`;
+  return `<div class="card"><div class="card-head"><div><h2>Education</h2></div></div>
+   <div class="list-row"><div class="badge" style="background:#1A73E8">MBA</div><div><h3>Master of Business Administration</h3><p>Marketing and Startups &amp; SMEs Management. Bangalore University, 2022</p></div></div>
+   <div class="list-row"><div class="badge" style="background:#188038">BBA</div><div><h3>Bachelor of Business Administration</h3><p>University of Kashmir, 2018</p></div></div>
+   <div class="list-row"><div class="badge" style="background:#E37400">DCA</div><div><h3>One-Year Diploma in Computer Applications</h3><p>NIELIT</p></div></div></div>`;
+ }};
+
+P.tools={label:'Tools',icon:'tools',tabs:[],
+ render(){return `<div class="card"><div class="card-head"><div><h2>Tools and platforms</h2><p>The stack I use day to day</p></div></div><div class="table-wrap"><table class="data"><thead><tr><th>Category</th><th>Tools</th></tr></thead><tbody>${tools.map(r=>`<tr><td style="font-weight:500;white-space:nowrap">${r[0]}</td><td><div class="tags">${r[1].split(', ').map(x=>`<span class="tag">${esc(x)}</span>`).join('')}</div></td></tr>`).join('')}</tbody></table></div></div>`}};
+
+P.contact={label:'Contact',icon:'contact',tabs:[],
+ render(){return `<div class="grid2">
+  <div class="card"><div class="card-head"><div><h2>Get in touch</h2><p>Based in Srinagar, J&amp;K, India. Working remotely with US teams.</p></div></div><div class="card-body">
+   <div class="field"><label>Email</label><div class="v"><a href="mailto:iamjazzib@gmail.com">iamjazzib@gmail.com</a><button class="copy" data-copy="iamjazzib@gmail.com">Copy email</button></div></div>
+   <div class="field"><label>Alternate email</label><div class="v"><a href="mailto:Jazzib.khan@outlook.com">Jazzib.khan@outlook.com</a><button class="copy" data-copy="Jazzib.khan@outlook.com">Copy email</button></div></div>
+   <div class="field"><label>Phone</label><div class="v"><a href="tel:+916005044500">+91 6005044500</a><button class="copy" data-copy="+91 6005044500">Copy number</button></div></div>
+  </div></div>
+  <div class="card"><div class="card-head"><div><h2>Open to</h2></div></div><div class="card-body">
+   <div class="tags" style="margin-bottom:16px">${['Product Marketing Manager','Growth Marketing Manager','Digital Marketing Manager','Performance Marketing','SaaS Marketing','Remote roles'].map(x=>`<span class="tag">${x}</span>`).join('')}</div>
+   <p class="muted">Tell me about the product, the audience and the goal, and I'll come back with how I'd approach it.</p>
+   <div class="actions"><a class="btn primary" href="mailto:iamjazzib@gmail.com?subject=Opportunity%20for%20Jazib%20Khan">Email Jazib</a><a class="btn" href="tel:+916005044500">Call</a></div>
+  </div></div></div>`}};
+
+/* timeline chart */
+function gantt(){
+ const y0=2016,y1=2027,W=900,L=210,R=16,rowH=34,top=30;
+ const rows=[
+  ['BBA, University of Kashmir',null,2018.5,'#5F6368'],
+  ['MBA, Bangalore University',null,2022.5,'#5F6368'],
+  ['Digital Marketing Specialist, iQuasar',2022.37,2025.95,'#188038'],
+  ['Marketing & Product Dev, EXPENTOR',2025.83,2026.8,'#1A73E8']
+ ];
+ const H=top+rows.length*rowH+10;
+ const x=v=>L+(Math.max(v,y0)-y0)/(y1-y0)*(W-L-R);
+ let g='';
+ for(let y=y0;y<=y1;y++){g+=`<line x1="${x(y)}" x2="${x(y)}" y1="${top-6}" y2="${H-6}" stroke="var(--line)"/>`;if(y<y1)g+=`<text x="${x(y)+4}" y="${top-12}" font-size="11" fill="var(--muted)">${y}</text>`}
+ rows.forEach((r,i)=>{const yy=top+i*rowH;g+=`<text x="0" y="${yy+19}" font-size="12" fill="var(--text)">${esc(r[0])}</text>`;
+  if(r[1]===null){g+=`<circle cx="${x(r[2])}" cy="${yy+15}" r="7" fill="${r[3]}"/><text x="${x(r[2])+12}" y="${yy+19}" font-size="11" fill="var(--muted)">Completed ${Math.floor(r[2])}</text>`}
+  else g+=`<rect x="${x(r[1])}" y="${yy+5}" width="${x(r[2])-x(r[1])}" height="20" rx="4" fill="${r[3]}"/>`});
+ g+=`<line x1="${x(2026.77)}" x2="${x(2026.77)}" y1="${top-6}" y2="${H-6}" stroke="#D93025" stroke-width="2"/><text x="${x(2026.77)-4}" y="${H+8}" text-anchor="end" font-size="11" fill="#D93025">Today</text>`;
+ return `<svg viewBox="0 0 ${W} ${H+14}" role="img" aria-label="Timeline of education and roles">${g}</svg>`;
+}
+
+/* ---------- NAV ---------- */
+const order=['overview','experience','skills','products','projects','education','tools','contact'];
+const groups=[['About',['overview','experience','skills']],['Work',['products','projects']],['Credentials',['education','tools']],['',['contact']]];
+const rail=$('#rail');
+rail.innerHTML=groups.map(([g,ids])=>(g?`<div class="rail-group">${g}</div>`:'<div style="height:12px"></div>')+ids.map(id=>`<button class="nav-item" data-nav="${id}">${svg(P[id].icon)}<span>${esc(P[id].label)}</span></button>`).join('')).join('')+
+ `<div class="rail-foot"><strong>Open to opportunities</strong>Product, growth and digital marketing roles. Remote with US teams.</div>`;
+let cur={page:'overview',tab:null};
+function go(page,tab,push=true){
+ if(!P[page])page='overview';
+ const pg=P[page];
+ if(!tab||!pg.tabs.find(t=>t[0]===tab))tab=pg.tabs.length?pg.tabs[0][0]:null;
+ cur={page,tab};
+ document.querySelectorAll('.nav-item').forEach(b=>b.toggleAttribute('aria-current',false)||b.dataset.nav===page&&b.setAttribute('aria-current','page'));
+ $('#pageTitle').textContent=pg.label;
+ $('#crumb').textContent='Jazib Khan  /  '+pg.label+(tab&&tab!=='all'&&tab!=='summary'?'  /  '+pg.tabs.find(t=>t[0]===tab)[1]:'');
+ $('#tabs').innerHTML=pg.tabs.map(t=>`<button class="tab" role="tab" data-tab="${t[0]}" aria-selected="${t[0]===tab}" tabindex="${t[0]===tab?0:-1}">${esc(t[1])}</button>`).join('');
+ $('#content').innerHTML=pg.render(tab);
+ const a=$('#tabs [aria-selected="true"]');if(a)a.scrollIntoView({block:'nearest',inline:'nearest'});
+ if(push)history.replaceState(null,'','#'+page+(tab?'/'+tab:''));
+ closeMenu();window.scrollTo({top:0});
+}
+document.addEventListener('click',e=>{
+ const n=e.target.closest('[data-nav]');if(n){go(n.dataset.nav);return;}
+ const t=e.target.closest('[data-tab]');if(t){go(cur.page,t.dataset.tab);return;}
+ const c=e.target.closest('.copy');if(c){navigator.clipboard.writeText(c.dataset.copy).then(()=>say('Copied '+c.dataset.copy),()=>say('Copy is blocked here. Select the text to copy it.'));}
+ if(!e.target.closest('.search'))$('#results').classList.remove('open');
+});
+$('#tabs').addEventListener('keydown',e=>{
+ if(!['ArrowRight','ArrowLeft'].includes(e.key))return;
+ const ts=[...$('#tabs').children];const i=ts.findIndex(t=>t.getAttribute('aria-selected')==='true');
+ const n=ts[(i+(e.key==='ArrowRight'?1:-1)+ts.length)%ts.length];go(cur.page,n.dataset.tab);$('#tabs [aria-selected="true"]').focus();
+});
+/* hire dialog */
+const dlg=$('#hireDlg');
+$('#hireBtn').onclick=()=>{try{dlg.showModal()}catch(e){go('contact')}};
+$('#hireClose').onclick=()=>dlg.close();
+$('#hireMore').addEventListener('click',()=>dlg.close());
+dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close()});
+/* mobile menu */
+function closeMenu(){rail.classList.remove('open');$('#scrim').classList.remove('open')}
+$('#menuBtn').onclick=()=>{rail.classList.add('open');$('#scrim').classList.add('open')};
+$('#scrim').onclick=closeMenu;
+
+/* search */
+const index=[];
+roles.forEach(r=>index.push([r.title+' '+r.org,'Experience','experience',r.id,r.stack.join(' ')+' '+r.groups.map(g=>g[0]+' '+g[2].join(' ')).join(' ')]));
+products.forEach(p=>index.push([p.name,'Products','products',p.id,p.kind+' '+p.role.join(' ')+' '+p.channels.join(' ')]));
+skillAreas.forEach(a=>a.items.forEach(s=>index.push([s,'Skills: '+a.name,'skills','all',a.name])));
+tools.forEach(t=>t[1].split(', ').forEach(x=>index.push([x,'Tools','tools',null,t[0]])));
+projects.forEach(p=>index.push([p.name,'Projects','projects',null,p.text]));
+certs.forEach(c=>index.push([c[2],'Certifications','education','certs',c[3]]));
+const res=$('#results');
+$('#search').addEventListener('input',e=>{
+ const q=e.target.value.trim().toLowerCase();
+ if(!q){res.classList.remove('open');return;}
+ const hits=index.filter(i=>i[0].toLowerCase().includes(q)).concat(index.filter(i=>!i[0].toLowerCase().includes(q)&&i[4].toLowerCase().includes(q))).slice(0,8);
+ res.innerHTML=hits.length?hits.map(h=>`<button data-go="${h[2]}" data-t="${h[3]||''}" data-q="${esc(q)}"><span>${esc(h[0])}</span><small>${esc(h[1])}</small></button>`).join(''):`<button disabled><span>No results for "${esc(e.target.value)}"</span><small>Try GA4 or branding</small></button>`;
+ res.classList.add('open');
+});
+res.addEventListener('click',e=>{const b=e.target.closest('[data-go]');if(!b)return;
+ go(b.dataset.go,b.dataset.t||null);res.classList.remove('open');
+ const q=b.dataset.q;document.querySelectorAll('.tag').forEach(t=>t.classList.toggle('hit',t.textContent.toLowerCase().includes(q)));
+});
+
+/* toast */
+let tt;function say(m){const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('show'),2400)}
+
+/* theme */
+const root=document.documentElement;
+try{const s=localStorage.getItem('jk-theme');if(s)root.dataset.theme=s}catch(e){}
+$('#themeBtn').onclick=()=>{const dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;root.dataset.theme=dark?'light':'dark';try{localStorage.setItem('jk-theme',root.dataset.theme)}catch(e){}};
+
+const [hp,ht]=(location.hash.slice(1)||'overview').split('/');go(hp,ht,false);
+})();
+</script>
+</body>
+</html>
